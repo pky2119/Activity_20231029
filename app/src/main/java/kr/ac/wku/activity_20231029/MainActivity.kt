@@ -1,5 +1,6 @@
 package kr.ac.wku.activity_20231029
 
+import android.content.Intent
 import android.database.DatabaseUtils
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,5 +13,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+//         버튼이 눌리면 => SecondActivity 화면으로 이동
+
+        binding.btnMoveToSecond.setOnClickListener {
+
+//            화면 이동 시키기 : Intent 클래스 활용
+//            1. 어디서 출발해서 어디로 도착할지 정보 명시(티켓)
+
+            val myIntent = Intent( this, SecondActivity::class.java )
+
+//            2. myIntent에 적힌대로 실제 화면 이동
+            startActivity(myIntent)
+        }
     }
 }

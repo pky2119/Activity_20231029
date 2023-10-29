@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "kr.ac.wku.activity_20231029"
-    compileSdk = 33
+    compileSdk = 34
 
     dataBinding {
         enable = true
@@ -14,7 +14,7 @@ android {
     defaultConfig {
         applicationId = "kr.ac.wku.activity_20231029"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
