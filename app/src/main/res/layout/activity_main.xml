@@ -21,6 +21,12 @@
         android:layout_height="wrap_content"
         android:hint="3번 화면에 전달할 메세지"/>
 
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="3번 화면에 전달할 숫자"/>
+
     <Button
         android:id="@+id/btnMoveToThird"
         android:layout_width="match_parent"
