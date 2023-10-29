@@ -26,5 +26,12 @@ class MainActivity : AppCompatActivity() {
 //            2. myIntent에 적힌대로 실제 화면 이동
             startActivity(myIntent)
         }
+
+        binding.btnMoveToThird.setOnClickListener {
+
+            val myIntent = Intent(this, ThirdActivity::class.java)
+
+            startActivity(myIntent)
+        }
     }
 }
